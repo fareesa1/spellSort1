@@ -20,17 +20,17 @@ function preload(){
 }
 
 function setup(){
-    canvas = createCanvas(displayWidth, displayHeight);
+    canvas = createCanvas(windowWidth, windowHeight);
 
     engine = Engine.create();
     world = engine.world;
 
     // console.log(letter_4words[0])
 
-    out1 = createSprite(1*(displayWidth/8), displayHeight-(displayWidth/8), displayWidth/4, displayWidth/4);
-    out2 = createSprite(3*(displayWidth/8), displayHeight-(displayWidth/8), displayWidth/4, displayWidth/4);
-    out3 = createSprite(5*(displayWidth/8), displayHeight-(displayWidth/8), displayWidth/4, displayWidth/4);
-    out4 = createSprite(7*(displayWidth/8), displayHeight-(displayWidth/8), displayWidth/4, displayWidth/4);
+    out1 = createSprite(1*(windowWidth/8), windowHeight-(windowWidth/8), windowWidth/4, windowWidth/4);
+    out2 = createSprite(3*(windowWidth/8), windowHeight-(windowWidth/8), windowWidth/4, windowWidth/4);
+    out3 = createSprite(5*(windowWidth/8), windowHeight-(windowWidth/8), windowWidth/4, windowWidth/4);
+    out4 = createSprite(7*(windowWidth/8), windowHeight-(windowWidth/8), windowWidth/4, windowWidth/4);
 
     out1.addImage("outputBox.png", outputBox)
     out2.addImage("outputBox.png", outputBox)
@@ -40,7 +40,7 @@ function setup(){
     out = [out1,out2,out3,out4]
 
     letter1 = createButton(letter_4words[0][0]);
-    letter1.position(1*(displayWidth/8),l1_y);
+    letter1.position(1*(windowWidth/8),l1_y);
     letter1.style("background-color","yellow");
     letter1.style("border-radius","25px");
     // letter1.style.fontSize = "40px"
@@ -68,7 +68,7 @@ function setup(){
     })
 
     letter2 = createButton(letter_4words[0][1]);
-    letter2.position(3*(displayWidth/8),l2_y);
+    letter2.position(3*(windowWidth/8),l2_y);
     letter2.style("background-color","yellow");
     letter2.style("border-radius","25px");
     // letter1.style.fontSize = "40px"
@@ -96,7 +96,7 @@ function setup(){
     })
 
     letter3 = createButton(letter_4words[0][2]);
-    letter3.position(5*(displayWidth/8),l3_y);
+    letter3.position(5*(windowWidth/8),l3_y);
     letter3.style("background-color","yellow");
     letter3.style("border-radius","25px");
     // letter1.style.fontSize = "40px"
@@ -124,7 +124,7 @@ function setup(){
     })
 
     letter4 = createButton(letter_4words[0][3]);
-    letter4.position(7*(displayWidth/8),l4_y);
+    letter4.position(7*(windowWidth/8),l4_y);
     letter4.style("background-color","yellow");
     letter4.style("border-radius","25px");
     // letter1.style.fontSize = "40px"
@@ -171,7 +171,7 @@ function draw(){
     
     
     //test.display();
-    /*for (var i=0; i<displayHeight-(displayWidth/8); i++){
+    /*for (var i=0; i<windowHeight-(windowWidth/8); i++){
         l1_y+=1
         l2_y+=1
     }*/
