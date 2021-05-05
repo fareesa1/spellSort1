@@ -1,0 +1,13 @@
+Planned:
+The point system of the basic game
+The Customized Keyboard
+The PC/NPC
+The main mechanics(skill/chance, rules)
+Point system
+
+In Progress:
+A more well developed story.
+A special point system, where they can boost points with certain events.
+Maybe want to make a better goal...
+User interface screen
+
